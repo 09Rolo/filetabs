@@ -277,6 +277,9 @@ input[type="file"] {
 
 
 #filelabel {
+    max-width: 95%;
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: 30px;
     font-weight: bold;
     color: white;
@@ -426,6 +429,9 @@ input[type="file"] + #filelabel * {
 
 
 .összlinks li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100%;
     min-width: 100%;
     padding: 10px;
 }
