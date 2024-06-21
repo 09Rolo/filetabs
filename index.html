@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="shortcut icon" href="./pics/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>File Browser Tabs</title>
+</head>
+<body onload="loaded()">
+    <div id="fuggony"></div>
+
+    <div id="betolto">
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+
+        <br>
+
+        <div id="betolto_szoveg">
+            <h2 class="cant_select" >Betöltés ...</h2>
+            <h3 class="cant_select">Ez egy kis ideig is eltarthat</h3>
+        </div>
+    </div>
+
+
+    
+
+    <!------------------------------------------------------------------------------------------------------------------------------>
+
+    <div class="main">
+        <h1 class="cant_select" id="fotitle">File browsertabs</h1>
+        
+
+        <input type="file" name="file" id="file" accept=".txt">
+        <label for="file" id="filelabel" class="cant_select">Fájl kiválasztása</label>
+
+        <p id="visszajelzes" class="cant_select">Tölts be egy fájlt</p>
+
+        <hr>
+        <div id="infok">
+            <h1>Információk</h1>
+
+            <ul>
+                <li style="text-decoration: underline;">Az előugró ablakoknak engedélyezve kell lennie ha mindet meg akarod nyitni egyszerre!</li>
+                <li>Muszáj .txt fájlnak lennie</li>
+                <li>A linkeket csak be kell illeszteni, és mindegyiket új sorba kell tenni</li>
+                <li>Semmi más ne legyen a fájlban</li>
+            </ul>
+        </div>
+
+
+        <div id="linkek">
+            <h1>Linkek</h1>
+            <div class="controls">
+                <button onclick="osszesOpen()" class="cant_select">Összes megnyitása</button>
+                <button onclick="reload()" class="cant_select">Törlés</button>
+            </div>
+            <hr>
+
+            <ul class="összlinks">
+                <!--/js cucc\-->
+                <!--
+                <li><a href="${}" target="_blank" rel="noopener noreferrer">szoveg vagyok helló</a></li>
+                <li><a href="${}" target="_blank" rel="noopener noreferrer">szoveg vagyok helló</a></li>
+                <li><a href="${}" target="_blank" rel="noopener noreferrer">szoveg vagyok helló</a></li>
+                <li><a href="${}" target="_blank" rel="noopener noreferrer">szoveg vagyok helló</a></li>
+                -->
+
+            </ul>
+        </div>
+    </div>
+
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
